@@ -1,0 +1,52 @@
+jejejeej hola estoy bien comiendo caramelo xd
+miau
+ay
+ya se acaba enerooOoOoOoOo  
+-----------------
+MVC es una forma de organizar una aplicacion 
+separando responsabilidades
+
+M -> modelo
+V -> Vista
+C -> Controlador
+¿qué es el modelo?
+el modelo se encargfa de los datos y de la base de datos
+el modelo: 
+se conecta a MySQL
+ejecuta consultas (SELECT, INSERT, UPDATE, DELETE)
+NO muestra html
+ejemplos de responsabilidad del modelo
+consular usuarios
+guardar un usuario
+actualizar datos
+NO muestra una tabla html
+¿que es la vista?
+la vista se encarga de mostrar la info al usuario
+la vista:
+contiene html
+puede usar php minimo (<?= ?>)
+No se conecta a la base de datos
+no decide que hacer
+ejemplos de vista
+formularios
+tablas
+paginas html
+NO consultas html
+el Controlador
+recibe acciones del usuario (GET, POST)
+llama al modelo
+decide que vista mostrar
+no muestra html directamente
+ejemplos de Controlador
+recibir POST
+validar datos
+llamar al modelo
+redirigir a una Vista
+
+ejemplo conceptual (sin codigo)
+caso: mostrar usuarios
+vista: boton ver usuarios
+controlador: recibe la peticion
+modelo: consulta la bd
+vista: muestras la tabla
+cada uno hace solo su trabajo
